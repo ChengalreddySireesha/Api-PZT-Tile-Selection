@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Estimation</title>
+    <link rel="stylesheet" href="sus.css">
+</head>
+<body>
+    <header>
+        <h1>Energy Estimation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Estimate Energy Generation</h2>
+        <form id="trafficForm">
+            <label for="footTraffic">Daily Foot Traffic (number of footsteps):</label>
+            <input type="number" id="footTraffic" required placeholder="Enter number of footsteps">
+
+            <label for="wattsPerStep">Energy per Step:</label>
+            <input type="number" id="wattsPerStep" step="any" required placeholder="Enter energy per step">
+            <select id="energyUnit">
+                <option value="w">Watts (W)</option>
+                <option value="mw">Milliwatts (mW)</option>
+                <option value="kw">Kilowatts (kW)</option>
+                <option value="mwatt">Megawatts (MW)</option>
+            </select>
+
+            <button type="submit">Calculate Energy</button>
+        </form>
+        <div id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </main>
+    <script src="energy-estimation.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- foot-traffic.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foot Traffic Data</title>
+    <link rel="stylesheet" href="sus.css">
+</head>
+<body>
+    <header>
+        <h1>Upload Foot Traffic Data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Input Foot Traffic Data</h2>
+        <form id="trafficForm">
+            <label for="area">Area Name:</label>
+            <input type="text" id="area" required>
+
+            <label for="footTraffic">Daily Foot Traffic (Number of Footsteps):</label>
+            <input type="number" id="footTraffic" required>
+
+            <label for="footstepPower">Energy per Footstep (Watts):</label>
+            <input type="number" id="footstepPower" required value="1.2">
+
+            <button type="submit">Submit Data</button>
+        </form>
+        <div id="responseMessage">
+            <!-- Response message will be shown here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 PZT Tile Project. All Rights Reserved.</p>
+    </footer>
+    <script src="traffic-data.js"></script>
+</body>
+</html>

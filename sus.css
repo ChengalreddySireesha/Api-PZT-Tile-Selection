@@ -1,0 +1,158 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;  /* Modern sans-serif font */
+    background-color: #f9f9f9;         /* Light background color */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Font import for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Header Styling */
+header {
+    background-color: #004d40;  /* Dark teal for contrast */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Forms and Inputs */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+input[type="number"], input[type="email"], input[type="text"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus, input[type="email"]:focus, input[type="text"]:focus {
+    border-color: #004d40;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #00332c;
+    transform: scale(1.05);
+}
+
+/* Results Section */
+#results, #roiResults {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    border-left: 6px solid #004d40;
+}
+
+#results p, #roiResults p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+/* Navigation Bar for Mobile */
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
